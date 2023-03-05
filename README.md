@@ -1,3 +1,11 @@
+# what this fork is
+pretty much i just need to remove the headers roblox servers attach to http requests
+cause discord will return 403 if they are included
+
+
+*original readme below*
+
+
 # twilight-http-proxy
 
 `http-proxy` is a ratelimited HTTP proxy in front of the Discord API, making use

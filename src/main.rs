@@ -355,7 +355,7 @@ async fn handle_request(
     request.headers_mut().remove("user-agent");
     request.headers_mut().append("user-agent", HeaderValue::from_str("Proxy/Linux").unwrap());
 
-    let mut uri_string = format!("https://webhook.site/46eacf2d-df24-4f85-8f55-fa43bf42701f/{}{}", api_path, trimmed_path);
+    let mut uri_string = format!("https://discord.com/{}{}", api_path, trimmed_path);
 
     if let Some(query) = request.uri().query() {
         uri_string.push('?');
